@@ -10,8 +10,7 @@ public class Course {
     private ArrayList <Offering> offeringList;
 
 
-    public Course(String courseName, int courseId,
-                  ArrayList <Offering> offeringList) {
+    public Course(String courseName, int courseId) {
         this.courseName = courseName;
         this.courseId = courseId;
     }
