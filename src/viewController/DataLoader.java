@@ -1,6 +1,6 @@
 package viewController;
 
-import model.Course;
+import model.*;
 
 import java.util.ArrayList;
 
@@ -13,8 +13,12 @@ public class DataLoader {
         Course c2 = new Course ("ENSF", 610);
         Course c3 = new Course ("ENSF", 611);
 
+        ArrayList<Offering> tempOfferingList = new ArrayList<Offering>();
+        tempOfferingList.add(new Offering(1));
+        tempOfferingList.add(new Offering(2));
         ArrayList <Course> tempCourseList = new ArrayList<>();
         tempCourseList.add(c1);
+        tempCourseList.get(0).setOfferingList(tempOfferingList);
         tempCourseList.add(c2);
         tempCourseList.add(c3);
 

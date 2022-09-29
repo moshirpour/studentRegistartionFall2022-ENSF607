@@ -2,7 +2,6 @@ package viewController;
 
 import model.*;
 
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,11 +11,18 @@ public class Main {
 
         System.out.println(cat);
 
-        ArrayList<Course> tempCourses = cat.getCourseList();
+        Student s1 = new Student ("Jane", 1);
+        Student s2 = new Student ("Sam", 2);
 
-        tempCourses.get(1).setCourseName("CHEM");
+        s1.registerForCourse(cat,"ENSF", 609, 1);
 
-        System.out.println(cat);
+        System.out.println(s1);
+
+      //  ArrayList<Course> tempCourses = cat.getCourseList();
+
+      //  tempCourses.get(1).setCourseName("CHEM");
+
+      //  System.out.println(cat);
 
     }
 
